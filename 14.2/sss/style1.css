@@ -1,0 +1,53 @@
+  body{
+           background-color:#FAD9EC;}
+       .container{
+
+       }
+       h1{
+          font-style: italic;
+font-size: 40pt;
+color:brown;
+text-align: center;
+margin-top: 60px;
+           
+       }
+    .chik1{
+        text-align: center;
+        position: absolute;
+         margin-top: 200px;
+        margin-left: 65px;
+         background-color:white;
+        height: 300px;
+        width: 400px;
+        font-style:oblique;
+        color:brown;
+  
+       }
+
+
+       .chik2{
+           text-align: center;
+            margin-top: 200px;
+           margin-left: 560px;
+           position: absolute;
+   background-color:white;
+        height: 300px;
+        width: 400px;
+           Color:brown;
+}
+
+       .chik3{
+           text-align: center;
+           position: absolute;
+           margin-top: 200px;
+           margin-left: 1050px;
+           margin-right:65px;
+   background-color:white;
+        height: 300px;
+        width: 400px;
+           Color:brown;
+}
+
+       .gif{
+           text-align: center;
+       }

@@ -1,0 +1,36 @@
+
+body{
+   
+    background: url(img/1.gif);
+     -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    
+    
+    
+        
+}
+ .thumb img  {
+   
+    padding: 45px; 
+    
+    margin-right: 35px; 
+    margin-bottom: 60px; 
+     margin-left: 35px;
+   }
+h1{
+    text-align:center;
+    font-size:40px;
+    color: azure;
+}
+a{
+    color: azure;
+}
+h2{
+    text-align: center;
+    border: 10px solid azure;
+    padding: 50px;
+}

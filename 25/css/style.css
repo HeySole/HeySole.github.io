@@ -1,0 +1,136 @@
+body{
+    background-image: url(../img/ea4432f151dae339bde3a5dbbd8bfe44.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.namee{
+    color: #262422;
+    font-size: 24px;
+    text-align: center;
+}
+.buti{
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #8C8B87;
+    font-size: 20px;
+    border: 4px solid;
+    border-color: #262422;
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0);
+    transition: .3s;
+
+}
+.buti:hover{
+    background-color: #262422;
+}
+.buti::before, 
+.buti::after{
+position: absolute;
+content: "";
+width: 20%;
+height: 50%;
+transition: .3s;
+z-index: -1;
+}
+.buti::before{
+    border-bottom:4px solid ;
+    border-bottom-color: #262422;
+    border-left:4px solid ;
+    border-left-color: #262422;
+    top: 60%;
+    left: -4%;
+
+}
+.buti::after{
+    border-top:4px solid ;
+    border-top-color: #262422;
+    border-right:4px solid ;
+    border-right-color: #262422;
+    bottom: 60%;
+    right: -4%;
+    
+}
+.buti:active:before{
+    top: 65%;
+    left: -8%;
+}
+.buti:active:after{
+    bottom: 65%;
+    right: -8%;
+}
+.buti:active:before,
+.buti:active:after{
+    width: 30%;
+height: 60%;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+button{
+    margin-top: 60px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #8C8B87;
+    font-size: 20px;
+    border: 4px solid;
+    border-color: #262422;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: .3s;
+    outline: none;
+
+}
+button:hover{
+    background-color: #262422;
+    
+}
+button::before, button::after{
+position: absolute;
+content: "";
+width: 20%;
+height: 50%;
+transition: .3s;
+z-index: -1;
+}
+button:before{
+    border-bottom:4px solid ;
+    border-bottom-color: #262422;
+    border-left:4px solid ;
+    border-left-color: #262422;
+    top: 60%;
+    left: -5%;
+
+}
+button:after{
+    border-top:4px solid ;
+    border-top-color: #262422;
+    border-right:4px solid ;
+    border-right-color: #262422;
+    bottom: 60%;
+    right: -5%;
+    
+}
+button:active:before{
+    top: 65%;
+    left: -8%;
+}
+button:active:after{
+    bottom: 65%;
+    right: -8%;
+}
+button:active:before, button:active:after{
+    width: 30%;
+height: 60%;
+}
+a{
+    text-decoration: none;
+    color: #8C8B87;
+
+    
+}

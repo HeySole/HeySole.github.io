@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>26</title>
+</head>
+<body>
+
+	<div class="container">
+ <!-- Начало кнопок для выбора цвета меню -->
+ <span id="red"></span>
+ <span id="orange"></span>
+ <span id="pink"></span>
+ <span id="green"></span>
+ <span id="blue"></span>
+ <span id="indigo"></span>
+ <span id="violet"></span>
+ <span id="grey"></span>
+ 
+<div class="colorScheme">
+ <a href="#red" class="red"></a>
+ <a href="#orange" class="orange"></a>
+ <a href="#pink" class="pink"></a>
+ <a href="#green" class="green"></a>
+ <a href="#blue" class="blue"></a>
+ <a href="#indigo" class="indigo"></a>
+ <a href="#violet" class="violet"></a>
+ <a href="#grey" class="grey"></a>
+ </div>
+ <!-- А тут сам код выпадающего меню-->
+ <ul id="nav">
+ <li><a href="index.html">Главная</a></li>
+ <li><a class="hsubs" href="#">Меню 1</a>
+ <ul class="subs">
+ <li><a href="index1.html">80s vibe</a></li>
+ 
+ 
+ </ul>
+ </li>
+ <li><a class="hsubs" href="#">Меню 2</a>
+ <ul class="subs">
+ <li><a href="index2.html">90s vibe</a></li>
+
+ </ul>
+ </li>
+ <li><a class="hsubs" href="#">Меню 3</a>
+ <ul class="subs">
+ <li><a href="index3.html">2000s vibe</a></li>
+ </ul>
+ 
+</div>
+
+<div class="foto">
+	<img src="1.jpg" vspace="10" hspace="10" alt="">
+</div>
+
+ </div>
+  <div id="text">
+ <strong> Music </strong> creates social cohesion, it speaks to all when words can fail, and wherever you go in the world, it is understood.<br>
+   Music is a universal gift and its power to connect people is without question. It is an art form with human interaction at its centre.
+   Music has the ability to bring people together by the instruments they play, a shared interest in a particular style of music<br>
+    and who doesn’t love the spine-tingling sounds of a huge orchestral crescendo? We all have been known to move our feet irresistibly <br>
+    to the rhythm of a drum beat or singing our hearts out to encourage our favourite sports team!
+  </div>
+	
+</body>
+
+
+<style>
+	#nav,#nav ul {
+ list-style: none outside none;
+ margin: 0;
+ padding: 0;
+}
+#nav {
+ background-color: #000000;
+ border-radius: 5px 5px 5px 5px;
+ box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+ display: table;
+ padding: 10px;
+ position: relative;
+}
+#nav ul {
+ background-color: red;
+ border:1px solid red;
+ border-radius: 0 5px 5px 5px;
+ border-width: 0 1px 1px;
+ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+ left: -9999px;
+ overflow: hidden;
+ padding: 20px 0 10px;
+ position: absolute;
+ top: -9999px;
+ 
+-moz-transform: scaleY(0);
+ -ms-transform: scaleY(0);
+ -o-transform: scaleY(0);
+ -webkit-transform: scaleY(0);
+ transform: scaleY(0);
+ 
+-moz-transform-origin: 0 0;
+ -ms-transform-origin: 0 0;
+ -o-transform-origin: 0 0;
+ -webkit-transform-origin: 0 0;
+ transform-origin: 0 0;
+ 
+-moz-transition: -moz-transform 0.1s linear;
+ -ms-transition: -ms-transform 0.1s linear;
+ -o-transition: -o-transform 0.1s linear;
+ -webkit-transition: -webkit-transform 0.1s linear;
+ transition: transform 0.1s linear;
+}
+#nav li {
+ float: left;
+ position: relative;
+}
+#nav li a {
+ color: #FFFFFF;
+ display: block;
+ font-size: 16px;
+ padding: 7px 20px;
+ text-decoration: none;
+}
+#nav li:hover > a {
+ background-color: red;
+ border-radius: 5px 5px 5px 5px;
+ color: #FFFFFF;
+}
+#nav li:hover > a.hsubs {
+ border-radius: 5px 5px 0 0;
+}
+#nav li:hover ul.subs {
+ left: 0;
+ top: 34px;
+ width: 180px;
+ 
+-moz-transform: scaleY(1);
+ -ms-transform: scaleY(1);
+ -o-transform: scaleY(1);
+ -webkit-transform: scaleY(1);
+}
+#nav ul li {
+ width: 100%;
+}
+#nav ul li:hover > a {
+ background-color: #222222 !important;
+ border-radius: 5px 5px 5px 5px;
+}
+ 
+/* colors */
+.colorScheme {
+ height: 32px;
+ list-style: none outside none;
+ margin: 0 auto 25px;
+ width: 320px;
+}
+.colorScheme a {
+ cursor: pointer;
+ float: left;
+ height: 30px;
+ margin: 0 5px;
+ width: 30px;
+}
+.colorScheme .red {
+ background-color: red;
+}
+.colorScheme .orange {
+ background-color: orange;
+}
+.colorScheme .pink {
+ background-color: pink;
+}
+.colorScheme .green {
+ background-color: green;
+}
+.colorScheme .blue {
+ background-color: blue;
+}
+.colorScheme .indigo {
+ background-color: indigo;
+}
+.colorScheme .violet {
+ background-color: violet;
+}
+.colorScheme .grey {
+ background-color: grey;
+}
+ 
+#red:target ~ #nav ul {
+ background-color: red;
+ border: 1px solid red;
+}
+#orange:target ~ #nav ul {
+ background-color: orange;
+ border: 1px solid orange;
+}
+#pink:target ~ #nav ul {
+ background-color: pink;
+ border: 1px solid pink;
+}
+#green:target ~ #nav ul {
+ background-color: green;
+ border: 1px solid green;
+}
+#blue:target ~ #nav ul {
+ background-color: blue;
+ border: 1px solid blue;
+}
+#indigo:target ~ #nav ul {
+ background-color: indigo;
+ border: 1px solid indigo;
+}
+#violet:target ~ #nav ul {
+ background-color: violet;
+ border: 1px solid violet;
+}
+#grey:target ~ #nav ul {
+ background-color: grey;
+ border: 1px solid grey;
+}
+ 
+#red:target ~ #nav li:hover > a {
+ background-color: red;
+}
+#orange:target ~ #nav li:hover > a {
+ background-color: orange;
+}
+#pink:target ~ #nav li:hover > a {
+ background-color: pink;
+}
+#green:target ~ #nav li:hover > a {
+ background-color: green;
+}
+#blue:target ~ #nav li:hover > a {
+ background-color: blue;
+}
+#indigo:target ~ #nav li:hover > a {
+ background-color: indigo;
+}
+#violet:target ~ #nav li:hover > a {
+ background-color: violet;
+}
+#grey:target ~ #nav li:hover > a {
+ background-color: grey;
+}
+
+body{
+	background-color: #5D4037;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.foto{
+width="200";
+height="100";
+margin-top: 10%;
+ float: left;
+}
+
+#text {
+    margin-left: 210px;
+    margin-top: 15%;
+    font-size: 20px;
+    valign:top;
+    color: #FFFFFF;
+   
+   }
+
+</style>
+</html>
